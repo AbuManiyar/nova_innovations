@@ -1,0 +1,140 @@
+h1{
+    color: rgb(98, 16, 176);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;}
+
+
+p{
+    text-align: center;
+    color: white;
+}
+
+
+.navbar{ 
+    padding: 10px;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+nav{
+    background: #000;
+}
+
+
+.logoimage{
+    width: 120px;
+}
+
+.iconimage{
+
+width: 80px;
+
+}
+
+.navicon{
+
+height: 30px;
+
+}
+
+.hero{
+width: 100%;
+min-height: 100vh;
+background-image: url('../images/bg1.png');
+background-position: center;
+background-size: cover;
+padding: 10px 0;
+overflow: hidden;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Style for the scrolling content */
+.scrolling-content {
+    white-space: nowrap;
+    position: absolute;
+    animation: scrollClients 20s linear infinite;
+}
+
+.client-name {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+@keyframes scrollClients {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); 
+    }
+}
+
+.navbar {
+    background:rgba(33, 31, 31, 0.7);
+    backdrop-filter: blur(5px);
+    
+    color:#fff;position:fixed;}
+
+
+    .logo_slider {
+        overflow: hidden;
+      }
+      
+      .logo_slider ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .logo_slider ul li {
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      
+      .logo_slider ul li a img {
+        position: relative;
+        width: 100%;
+        position: relative;
+      }
+      
+      .logo_slider ul li:nth-child(1n+7) a img {
+        -webkit-animation: mymove 5s infinite;
+        animation: mymove 5s infinite;
+      }
+      
+      @-webkit-keyframes mymove {
+        from {
+          left: 100vw;
+        }
+        to {
+          left: 0;
+        }
+      }
+      
+      @keyframes mymove {
+        from {
+          left: 100vw;
+        }
+        to {
+          left: 0;
+        }
+      }
